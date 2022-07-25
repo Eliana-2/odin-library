@@ -1,0 +1,73 @@
+label, input, div {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+th, td, table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr 0.3fr;
+}
+
+td {
+  display: flex;
+  align-items: center;
+}
+
+.book-row {
+  display: flex;
+  gap: 16px;
+}
+
+.book-button {
+  text-align: left;
+  padding: 0px;
+}
+
+.add-button {
+  width: 11%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.book-form {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -125px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 32px;
+  gap: 12px;
+  width: 250px;
+  height: 300px;
+  background-color: whitesmoke;
+}
+
+.submit-button-container {
+  padding-top: 12px;
+  display: grid;
+}
+
+.submit-button {
+  justify-self: center;
+  width: 50%;
+  height: 35px;
+}
