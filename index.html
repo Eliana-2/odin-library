@@ -23,17 +23,17 @@
     </thead>
   </table>
   <button class="add-button">Add book</button>
-  <form id="popup-form" class="book-form">
+  <form id="popup-form" class="book-form" onsubmit="addBook();return false">
       <label for="author">Author</label>
-      <input type="text" id="author">
+      <input type="text" id="author" required>
       <label for="title">Title</label>
-      <input type="text" id="title">
+      <input type="text" id="title" required>
       <label for="pages">Pages</label>
-      <input type="text" id="pages">
+      <input type="text" id="pages" required>
       <label for="read">Read</label>
-      <input type="text" id="read">
+      <input type="text" id="read" required>
       <div class="submit-button-container">
-        <button class= submit-button type="button">Submit</button>
+        <button class= submit-button type="submit">Submit</button>
       </div>
   </form>
 </body>

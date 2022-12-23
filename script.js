@@ -38,12 +38,20 @@ function openForm() {
   document.getElementById('popup-form').setAttribute('style', 'display:grid');
 }
 
+function clearForm() {
+  const formInputs = document.querySelectorAll('input');
+  formInputs.forEach((input) => {
+    input.value = '';
+  })
+}
+
 function closeForm() {
   document.getElementById('popup-form').setAttribute('style', 'display:none');
 }
 
 function addBook() {
   addBookToLibrary(document.getElementById('author').value, document.getElementById('title').value, document.getElementById('pages').value, document.getElementById('read').value);
+  clearForm();
   closeForm();
   updateCatalogue();
 }
@@ -84,6 +92,5 @@ function displayBooks() {
 }
 
 document.querySelector('.add-button').addEventListener('click', openForm);
-document.querySelector('.submit-button').addEventListener('click', addBook);
 
 displayBooks();
